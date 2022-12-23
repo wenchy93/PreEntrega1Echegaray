@@ -39,7 +39,7 @@ for (let numeroDePreguntas = 0; numeroDePreguntas <= 5; numeroDePreguntas++) {
     }
     if (numeroDePreguntas == 4) {
         //Calculo del precio total y alerta que lo muestra en pantalla y ademas imprime las unidades por juego.
-        precioTotal = (minecraftUnidades * minecraftPrecio + gta5Unidades * gta5Precio + legoUnidades * legoPrecio + eldenUnidades * eldenPrecio || 0);
+        precioTotal = (((minecraftUnidades * minecraftPrecio) + (gta5Unidades * gta5Precio) + (legoUnidades * legoPrecio) + (eldenUnidades * eldenPrecio)) || 0);
         alert("El precio total es de $" + precioTotal +". Llevas " + (minecraftUnidades || 0) + " Minecraft, " + (gta5Unidades || 0) + " Grand Thef Auto, " + (legoUnidades || 0) + " Lego Star Wars: The Skywalker Saga, " + (eldenUnidades || 0) + " Elden Ring.");
     }
 }
